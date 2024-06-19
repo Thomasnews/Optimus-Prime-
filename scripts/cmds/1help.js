@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ 🐥 | DÅËMÕÑ V2 ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
+const doNotDelete = "[ 🎶🎧 | REZ BOT V2 ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
 
 module.exports = {
   config: {
@@ -60,14 +60,14 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\n𝐣'𝐚𝐢 𝐞𝐧 𝐦𝐚 𝐩𝐨𝐬𝐬𝐞𝐬𝐬𝐢𝐨𝐧  ${totalCommands} 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞𝐬 \n🟢\n`;
-      msg += ` 𝘄𝗿𝗶𝘁𝗲 ${prefix} 𝗵𝗲𝗹𝗽 + 𝗻𝗼𝗺 𝗱𝗲 𝗹𝗮 𝗰𝗺𝗱, 𝐩𝐨𝐮𝐫 𝐞𝐧 𝐬𝐚𝐯𝐨𝐢𝐫 𝐝'𝐚𝐯𝐚𝐧𝐭𝐚𝐠𝐞 \n🟢\n`;
+      msg += `\n𝐣'𝐚𝐢 𝐞𝐧 𝐦𝐚 𝐩𝐨𝐬𝐬𝐞𝐬𝐬𝐢𝐨𝐧  ${totalCommands} 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞𝐬 \n🔴\n`;
+      msg += ` 𝘄𝗿𝗶𝘁𝗲 ${prefix} 𝗵𝗲𝗹𝗽 + 𝗻𝗼𝗺 𝗱𝗲 𝗹𝗮 𝗰𝗺𝗱, 𝐩𝐨𝐮𝐫 𝐞𝐧 𝐬𝐚𝐯𝐨𝐢𝐫 𝐝'𝐚𝐯𝐚𝐧𝐭𝐚𝐠𝐞 \n🔴\n`;
       msg += `🎶|  𝐣𝐞 𝐜𝐨𝐦𝐦𝐞𝐧𝐜𝐞 𝐩𝐚𝐫 𝐥'𝐢𝐝𝐞́𝐞, 𝐞𝐧 𝐬𝐮𝐢𝐭𝐞 𝐣𝐞 𝐜𝐡𝐞𝐫𝐜𝐡𝐞 𝐜𝐨𝐦𝐦𝐞𝐧𝐭 𝐫𝐞́𝐚𝐥𝐢𝐬𝐞𝐫 🎧🎶🎵V4`; // its not decoy so change it if you want 
 
       const helpListImages = [
-        "https://i.ibb.co/YDFNqyV/image.jpg", // add image link here
-                "https://i.ibb.co/bNk2rw6/image.jpg",
-        "https://i.ibb.co/GRwHR0X/image.jpg",
+        "https://i.ibb.co/cgGSVG4/image.jpg", // add image link here
+                "https://i.ibb.co/kggLk8s/image.jpg",
+        "https://i.ibb.co/c3m0Djx/image.jpg",
         // Add more image links as needed
       ];
 
