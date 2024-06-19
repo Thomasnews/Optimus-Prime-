@@ -3,11 +3,15 @@ const moment = require("moment-timezone");
 module.exports = {
 	config: {
 		name: "daily",
-		version: "1.2",
+		version: "1.1",
 		author: "NTKhang",
 		countDown: 5,
 		role: 0,
-		description: {
+		shortDescription: {
+			vi: "Nhận quà hàng ngày",
+			en: "Receive daily gift"
+		},
+		longDescription: {
 			vi: "Nhận quà hàng ngày",
 			en: "Receive daily gift"
 		},
@@ -20,7 +24,7 @@ module.exports = {
 		},
 		envConfig: {
 			rewardFirstDay: {
-				coin: 10000,
+				coin: 100,
 				exp: 10
 			}
 		}
@@ -46,8 +50,8 @@ module.exports = {
 			friday: "Friday",
 			saturday: "Saturday",
 			sunday: "Sunday",
-			alreadyReceived: "Tu as déjà reçu ton cadeau du jour",
-			received: "Tu as reçu %1 dollars et %2 exp"
+			alreadyReceived: "𝐭𝐨𝐢 𝐭𝐮 𝐯𝐞𝐮𝐱 𝐫𝐞𝐜𝐞𝐯𝐨𝐢𝐫 𝐥'𝐚𝐫𝐠𝐞𝐧𝐭 𝐚̀ 𝐜𝐡𝐚𝐪𝐮𝐞 𝐢𝐧𝐬𝐭𝐚𝐧𝐭 𝐪𝐮𝐨𝐢 😑",
+			received: "𝐭𝐮 𝐚𝐬 𝐫𝐞𝐜̧𝐮 ⇏ %1 𝐩𝐢𝐞̀𝐜𝐞𝐬   %2 𝐞𝐱𝐩 💵"
 		}
 	},
 
@@ -56,8 +60,8 @@ module.exports = {
 		if (args[0] == "info") {
 			let msg = "";
 			for (let i = 1; i < 8; i++) {
-				const getCoin = Math.floor(reward.coin * (1 + 20 / 10000) ** ((i == 0 ? 7 : i) - 1));
-				const getExp = Math.floor(reward.exp * (1 + 20 / 10000) ** ((i == 0 ? 7 : i) - 1));
+				const getCoin = Math.floor(reward.coin * (1 + 20 / 100) ** ((i == 0 ? 7 : i) - 1));
+				const getExp = Math.floor(reward.exp * (1 + 20 / 100) ** ((i == 0 ? 7 : i) - 1));
 				const day = i == 7 ? getLang("sunday") :
 					i == 6 ? getLang("saturday") :
 						i == 5 ? getLang("friday") :
@@ -70,7 +74,7 @@ module.exports = {
 			return message.reply(msg);
 		}
 
-		const dateTime = moment.tz("Africa/Abidjan").format("DD/MM/YYYY");
+		const dateTime = moment.tz("Asia/Ho_Chi_Minh").format("DD/MM/YYYY");
 		const date = new Date();
 		const currentDay = date.getDay(); // 0: sunday, 1: monday, 2: tuesday, 3: wednesday, 4: thursday, 5: friday, 6: saturday
 		const { senderID } = event;
@@ -79,8 +83,8 @@ module.exports = {
 		if (userData.data.lastTimeGetReward === dateTime)
 			return message.reply(getLang("alreadyReceived"));
 
-		const getCoin = Math.floor(reward.coin * (1 + 20 / 10000) ** ((currentDay == 0 ? 7 : currentDay) - 1));
-		const getExp = Math.floor(reward.exp * (1 + 20 / 10000) ** ((currentDay == 0 ? 7 : currentDay) - 1));
+		const getCoin = Math.floor(reward.coin * (1 + 20 / 100) ** ((currentDay == 0 ? 7 : currentDay) - 1));
+		const getExp = Math.floor(reward.exp * (1 + 20 / 100) ** ((currentDay == 0 ? 7 : currentDay) - 1));
 		userData.data.lastTimeGetReward = dateTime;
 		await usersData.set(senderID, {
 			money: userData.money + getCoin,
