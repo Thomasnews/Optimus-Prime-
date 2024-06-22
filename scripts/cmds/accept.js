@@ -3,10 +3,10 @@ const moment = require("moment-timezone");
 module.exports = {
   config: {
     name: "accept",
-    aliases: ['acp'],
+    aliases: ['acp','ac'],
     version: "1.0",
-    author: "Loid Butter",
-    countDown: 0,
+    author: "JV Barcenas",
+    countDown: 8,
     role: 2,
     shortDescription: "accept users",
     longDescription: "accept users",
