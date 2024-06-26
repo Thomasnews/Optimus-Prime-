@@ -60,9 +60,9 @@ module.exports = {
       const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
       message.reply(`
 
-\n❖ ── ✦──『✙-✙』──✦ ── ❖
+\n❖ ── ✦──✰✙.-.✙✰──✦ ── ❖
 \n${response}🤭\n
-❖ ── ✦『✙ - ✙✦ ── ❖`, messageID);
+❖ ── ✦✙ - ✙✦ ── ❖`, messageID);
     }
   }
 };
