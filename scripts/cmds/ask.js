@@ -18,7 +18,7 @@ async function getAIResponse(input, userId, messageID) {
     { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
   ];
 
-  let response = "𝖧𝗂, 𝗁𝗈𝗐 𝖺𝗋𝖾 𝗒𝗈𝗎? 𝖨 𝖺𝗆 𝗒𝗈𝗎𝗋 𝗏𝗂𝗋𝗍𝗎𝖺𝗅 𝖺𝗌𝗌𝗂𝗌𝗍𝖺𝗇𝗍 𝗋𝖾𝖺𝖽𝗒 𝗍𝗈 𝖺𝗇𝗌𝗐𝖾𝗋 𝖺𝗅𝗅 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗌𝗍𝗂𝗈𝗇𝗌 🤭";
+  let response = "𝗛𝗲𝘆, 𝗵𝗼𝘄 𝗮𝗿𝗲 𝘆𝗼𝘂? 𝗜 𝗮𝗺 𝘆𝗼𝘂𝗿 𝘃𝗶𝘁𝘂𝗮𝗹 𝗮𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗿𝗲𝗮𝗱𝘆 𝘁𝗼 𝗮𝗻𝘀𝘄𝗲𝗿 𝗮𝗹𝗹 𝘆𝗼𝘂𝗿 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀";
   let currentIndex = 0;
 
   for (let i = 0; i < services.length; i++) {
@@ -60,9 +60,9 @@ module.exports = {
       const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
       message.reply(`
 
-\n❖ ── ✦──✰✙.-.✙✰──✦ ── ❖
-\n${response}🤭\n
-❖ ── ✦✙ - ✙✦ ── ❖`, messageID);
+\n
+\n${response}😜\n
+`, messageID);
     }
   }
 };
