@@ -61,7 +61,7 @@ module.exports = {
       message.reply(`
 
 \n
-\n${response}😜\n
+\n${response} 😜\n
 `, messageID);
     }
   }
