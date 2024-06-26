@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔═══════════════╗\n❰✰..♪𝗥𝗘𝗭♪..✰ 𝗕𝗢𝗧🎶..✰❱    \n╚═══════════════╝`; // replace with your name 
+      msg += `\n█⧠⧠⧠✰🔵.✰.🔵✰⧠⧠⧠█.\n\n█⧠✰𝗚𝗢𝗔𝗧𝗕𝗢𝗧✰..V3✰⧠█\n`; // replace with your name 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -46,28 +46,28 @@ module.exports = {
 
       Object.keys(categories).forEach((category) => {
         if (category !== "info") {
-          msg += `\n█▀▀▀▀🎧...🎵▀▀▀▀█...🏁\n│ ☛『  ${category.toUpperCase()}  』`;
+          msg += `\n█⧠⧠⧠✰⚪.✰.⚪✰⧠⧠⧠█.\n│ 👉🏽『  ${category.toUpperCase()}  』`;
 
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 1).map((item) => `☞✰${item}✰↫`);
+            const cmds = names.slice(i, i + 1).map((item) => `👉✰${item}✰↫`);
             msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
 
-          msg += `\n█▄▄▄▄🎧...🎵▄▄▄▄█...🏁`;
+          msg += `\n█⧠⧠⧠✰⚪.✰.⚪✰⧠⧠⧠█.`;
         }
       });
 
       const totalCommands = commands.size;
-      msg += `\n𝐣'𝐚𝐢 𝐞𝐧 𝐦𝐚 𝐩𝐨𝐬𝐬𝐞𝐬𝐬𝐢𝐨𝐧  ${totalCommands} 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞𝐬 \n🔴\n`;
-      msg += ` 𝘄𝗿𝗶𝘁𝗲 ${prefix} 𝗵𝗲𝗹𝗽 + 𝗻𝗼𝗺 𝗱𝗲 𝗹𝗮 𝗰𝗺𝗱, 𝐩𝐨𝐮𝐫 𝐞𝐧 𝐬𝐚𝐯𝐨𝐢𝐫 𝐝'𝐚𝐯𝐚𝐧𝐭𝐚𝐠𝐞 \n🔴\n`;
-      msg += `🎶|  𝐣𝐞 𝐜𝐨𝐦𝐦𝐞𝐧𝐜𝐞 𝐩𝐚𝐫 𝐥'𝐢𝐝𝐞́𝐞, 𝐞𝐧 𝐬𝐮𝐢𝐭𝐞 𝐣𝐞 𝐜𝐡𝐞𝐫𝐜𝐡𝐞 𝐜𝐨𝐦𝐦𝐞𝐧𝐭 𝐫𝐞́𝐚𝐥𝐢𝐬𝐞𝐫 🎧🎶🎵V4`; // its not decoy so change it if you want 
+      msg += `\n𝗜 𝗵𝗮𝘃𝗲   ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 \n⚪\n`;
+      msg += ` 𝘄𝗿𝗶𝘁𝗲 ${prefix} 𝗵𝗲𝗹𝗽 + 𝗰𝗺𝗱 𝗻𝗮𝗺𝗲, 𝗧𝗼 𝗳𝗶𝗻𝗱 𝗼𝘂𝘁 𝗺𝗼𝗿𝗲 \n⚪\n`;
+      msg += `𝗜 𝘀𝘁𝗮𝗿𝘁 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗶𝗱𝗲𝗮 𝘁𝗵𝗲𝗻 𝗜 𝗹𝗼𝗼𝗸 𝗳𝗼𝗿 𝗵𝗼𝘄 𝘁𝗼 𝗺𝗮𝗸𝗲 𝗶𝘁 🟢V4`; // its not decoy so change it if you want 
 
       const helpListImages = [
-        "https://i.ibb.co/cgGSVG4/image.jpg", // add image link here
-                "https://i.ibb.co/kggLk8s/image.jpg",
-        "https://i.ibb.co/c3m0Djx/image.jpg",
+        "https://i.ibb.co/DtnQdTX/image.jpg", // add image link here
+                "https://i.ibb.co/rwjP8Hn/image.jpg",
+        "https://i.ibb.co/Tw4N8DR/image.jpg",
         // Add more image links as needed
       ];
 
@@ -127,4 +127,4 @@ function roleTextToString(roleText) {
     default:
       return "Unknown role";
   }
-}
+                                     }
