@@ -2,7 +2,7 @@ module.exports = {
     config: {
         name: "salut",
         version: "1.0",
-        author: "EINSTEIN JUNIOR",
+        author: "🍁..𝗘𝗜𝗡𝗦𝗧𝗘𝗜𝗡..🍁",
         countDown: 5,
         role: 0,
         shortDescription: "sarcasm",
@@ -15,8 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "salut") return message.reply("𝗛𝗲𝗹𝗹𝗼, 𝗵𝗼𝘄 𝗮𝗿𝗲 𝘆𝗼𝘂 ? 𝗜 𝗮𝗺 𝘆𝗼𝘂𝗿 𝘃𝗶𝗿𝘁𝘂𝗮𝗹 𝗮𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗿𝗲𝗮𝗱𝘆 𝘁𝗼 𝗮𝗻𝘀𝘄𝗲𝗿 𝘆𝗼𝘂𝗿 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 🤭
-
-                                                                                ");
+    if (event.body && event.body.toLowerCase() == "salut") return message.reply("𝐥𝐚 𝐟𝐞𝐫𝐦𝐞🤫 𝐭𝐞𝐬 𝐬𝐚𝐥𝐮𝐭𝐬 𝐭𝐮 𝐩𝐞𝐮𝐱 𝐭𝐞 𝐥𝐞𝐬 𝐦𝐞𝐭𝐭𝐫𝐞 𝐚𝐮 𝐜𝐮𝐥 𝐬𝐢 𝐬𝐚 𝐭'𝐚𝐫𝐫𝐚𝐧𝐠𝐞 🤏🧠🫰✨");
 }
 };
