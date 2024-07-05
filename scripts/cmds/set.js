@@ -1,4 +1,4 @@
-module.exports = {
+ module.exports = {
   config: {
     name: "set",
     aliases: ['ap'],
@@ -18,9 +18,11 @@ module.exports = {
   },
 
   onStart: async function ({ args, event, api, usersData }) {
-    const permission = ["100083695043563"];
+    const permission = ["61551808319261"];
   if (!permission.includes(event.senderID)) {
-    api.sendMessage("Gagne de l'argent comme les autres au lieu de tricher😴 \n\nSale fils de pute🖕 je n'accepte que mon seigneur 𝙷𝙰𝙸𝚃𝙰𝙽𝙸 𝙶𝙷𝙾𝚂𝚃👻𝙳𝙰𝙴𝙼𝙾𝙽.", event.threadID, event.messageID);
+    api.sendMessage("𝗦𝘁𝘂𝗽𝗶𝗱, 𝗼𝗻𝗹𝘆 𝗼𝗻𝗲 𝗽𝗲𝗿𝘀𝗼𝗻 𝗵𝗮𝘀 𝘁𝗵𝗲 𝗿𝗶𝗴𝗵𝘁 𝘁𝗼 𝘂𝘀𝗲 𝘁𝗵𝗶𝘀 𝗰𝗺𝗱 🤸🥀
+
+                    ", event.threadID, event.messageID);
     return;
   }
     const query = args[0];
@@ -70,3 +72,4 @@ module.exports = {
     }
   }
 };
+        
