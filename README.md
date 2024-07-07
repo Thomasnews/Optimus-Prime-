@@ -8,7 +8,7 @@ a voir sur facebook </h1>
 
 <p align="center">
 <h1 𝗛𝗔𝗠𝗘𝗗 𝗝𝗨𝗡𝗜𝗢𝗥( 𝗘𝗜𝗡𝗦𝗧𝗘𝗜𝗡)**💜🪶>
-<p>💜🪶 ᴊᴇ ᴠᴏᴜꜱ ᴅᴏɴɴᴇ ʟ'ᴀᴜᴛᴏʀɪꜱᴀᴛɪᴏɴ ᴅᴇ ꜰᴏʀᴋᴇʀ ᴍᴏɴ ʙᴏᴛ ᴍᴀɪꜱ ꜱᴠᴩ ɴᴇ ᴄʜᴀɴɢᴇᴢ ᴩᴀꜱ ʟᴇꜱ ɴᴏᴍꜱ ᴅᴇꜱ ᴀᴜᴛᴇᴜʀꜱ ᴄ'ᴇꜱᴛ ᴀ ᴅɪʀᴇ ᴍᴏɪ ᴇᴛ ᴍᴇꜱ ᴄᴏʟʟᴀʙᴏʀᴀᴛᴇᴜʀꜱ </p>
+<p>💜🪶</p>
 
 <P> salut moi c'est HAMED JUNIOR bienvenue pour plus d'informations contact moi:  https://www.facebook.com/profile.php?id=61561568196014</p>
 
